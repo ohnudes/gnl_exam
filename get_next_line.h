@@ -13,5 +13,6 @@ char	*clean_content(char *content, char *eol);
 
 // UTILS
 size_t	ft_strlen(char *str);
+char	*free_all(char *str);
 
 #endif // !GET_NEXT_LINE_H
