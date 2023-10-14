@@ -11,7 +11,7 @@
 // GET_NEXT_LINE
 char	*get_next_line(int fd);
 // read_to_content
-// create_line
+char	*create_line(char **content);
 char	*clean_content(char *content, char *eol);
 
 // UTILS
