@@ -4,11 +4,24 @@ SRC			:=	get_next_line.c \
 SRC			:=	$(addprefix $(SRC_DIR)/, $(SRC))
 
 OBJ_DIR		:=	obj
-OBJ			:=	$(addprefix $(OBJ_DIR)/, $(SRC .c=.o))
+OBJ			:=	$(SRC:$(SRC_DIR)%.c=$(OBJ_DIR)%.o)
+DEP			:=	$(OBJ:%.o=%.d)
 
 HEAD_DIR	:= get_next_line.h
 
-all:
+all: gnl
 
-print:
-	echo $(OBJ)
+gnl: $(OBJ)
+	cc -Wall -Wextra -Werror -I./include $(OBJ) -o gnl
+
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
+	mkdir -p obj
+	cc -Wall -Wextra -Werror -I./include -c $< -o $@
+-include $(DEP)
+
+clean:
+	rm -rf $(OBJ_DIR)
+
+fclean: clean
+	rm gnl
+
