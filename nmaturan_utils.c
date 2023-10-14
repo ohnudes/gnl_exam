@@ -1,6 +1,12 @@
 
 #include "get_next_line.h"
 
+char	*free_all(char *str)
+{
+	free(str);
+	return (NULL);
+}
+
 size_t	ft_strlen(char *str)
 {
 	size_t	i;
