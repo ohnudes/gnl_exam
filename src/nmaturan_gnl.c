@@ -1,4 +1,4 @@
-#include "get_next_line.h"
+#include "../include/get_next_line.h"
 #include <stdio.h>
 #include <unistd.h>
 
@@ -51,7 +51,7 @@ char	*mini_gnl(int fd)
 	return (line);
 }
 
-// prototipo de main
+// prototipo de gnl body
 char	*test_gnl(int fd)
 {
 	static char *content = {0};
@@ -69,4 +69,3 @@ char	*test_gnl(int fd)
 	content = clean_content(content, eol);
 	return (line);
 }
-

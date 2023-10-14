@@ -1,4 +1,5 @@
-#include "get_next_line.h"
+
+#include "../include/get_next_line.h"
 
 /* Function receives the content string and creates a
  * substring from eol + 1 to the end of content.
@@ -26,7 +27,7 @@ char	*clean_content(char *content, char *eol)
 		new_cnt++;
 		start++;
 	}
-	free (content);
+	//free(content);
 	return (new_cnt);
 }
 
