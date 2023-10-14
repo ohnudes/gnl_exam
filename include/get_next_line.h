@@ -8,6 +8,9 @@
 
 # define BUFFER_SIZE 1024
 
+// TESTING
+char	*little_read(char **txt, int fd);
+
 // GET_NEXT_LINE
 char	*test_gnl(int fd);
 char	*get_next_line(int fd);
