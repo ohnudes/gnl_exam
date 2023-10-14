@@ -8,4 +8,7 @@
 
 char	*get_next_line(int fd);
 
+// UTILS
+size_t	ft_strlen(char *str);
+
 #endif // !GET_NEXT_LINE_H
