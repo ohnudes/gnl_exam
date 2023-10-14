@@ -6,6 +6,9 @@
 #include <stdio.h>
 #include <fcntl.h>
 
+# define BUFFER_SIZE 1024
+
+// GET_NEXT_LINE
 char	*get_next_line(int fd);
 // read_to_content
 // create_line
