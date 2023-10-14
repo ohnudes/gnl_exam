@@ -7,6 +7,9 @@
 #include <fcntl.h>
 
 char	*get_next_line(int fd);
+// read_to_content
+// create_line
+char	*clean_content(char *content, char *eol);
 
 // UTILS
 size_t	ft_strlen(char *str);
