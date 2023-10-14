@@ -9,9 +9,10 @@
 # define BUFFER_SIZE 1024
 
 // GET_NEXT_LINE
+char	*test_gnl(int fd);
 char	*get_next_line(int fd);
 // read_to_content
-char	*create_line(char **content);
+// create_line
 char	*clean_content(char *content, char *eol);
 
 // UTILS
