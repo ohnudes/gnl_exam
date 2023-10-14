@@ -4,7 +4,11 @@ SRC			:=	get_next_line.c \
 SRC			:=	$(addprefix $(SRC_DIR)/, $(SRC))
 
 OBJ_DIR		:=	obj
-OBJ			:=	$(addprefix $(OBJ_DIR$)/, $(SRC .c=.o))
+OBJ			:=	$(addprefix $(OBJ_DIR)/, $(SRC .c=.o))
+
+HEAD_DIR	:= get_next_line.h
+
+all:
 
 print:
 	echo $(OBJ)
