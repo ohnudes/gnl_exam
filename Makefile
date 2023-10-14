@@ -25,3 +25,4 @@ clean:
 fclean: clean
 	rm gnl
 
+.PHONY: all gnl clean fclean
